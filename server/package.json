@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Express server for MERN testing assignment",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --testEnvironment=node",
+    "test:watch": "jest --testEnvironment=node --watch",
+    "setup-test-db": "node scripts/setupTestDb.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express-validator": "^6.15.0",
+    "morgan": "^1.10.0",
+    "helmet": "^6.1.5",
+    "express-rate-limit": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "mongodb-memory-server": "^8.12.2"
+  }
+}
